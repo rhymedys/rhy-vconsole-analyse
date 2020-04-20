@@ -581,7 +581,7 @@ render 的过程就是就是一个将一个 vConsole 的 ui 模版[tpl](https://
 
 通过源码的分析，我们可以总结出 vConsole 核心的简单的初始化流程如下图
 
-![Image text](https://github.com/rhymedys/rhy-vconsole-analyse/blob/master/初始化流程.png)
+![build](https://github.com/rhymedys/rhy-vconsole-analyse/blob/master/初始化流程.png)
 
 ## Plugin 分析
 
@@ -913,7 +913,7 @@ this.mockAjax();
 
 通过以上的分析，我们得知一个 Plugin 的完整初始化流程如下图：
 
-![Image Text](https://github.com/rhymedys/rhy-vconsole-analyse/blob/master/plugininit.png)
+![plugininit](https://github.com/rhymedys/rhy-vconsole-analyse/blob/master/plugininit.png)
 
 其他的 element、log、storage 等插件都遵循以上的分析，各自业务需自行查看源码
 
@@ -921,7 +921,7 @@ this.mockAjax();
 
 通过以上分析我们可知整个工具架构是这样的：
 
-![Image Text](https://github.com/rhymedys/rhy-vconsole-analyse/blob/master/build.png)
+![build](https://github.com/rhymedys/rhy-vconsole-analyse/blob/master/build.png)
 
 lib 层：提供引擎，工具给上层的 plugin 与应用层使用，同时定义了基础插件抽象类给 plugin 继承使用
 
