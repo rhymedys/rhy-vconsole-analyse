@@ -783,7 +783,7 @@ this.mockAjax();
 
 对 XMLHttpRequest 的对象中的原始 open 跟 send 方法进行劫持，以达到能够监听我们使用 XMLHttpRequest 对象发起的网络请求，**_在这里，我们发现了几个问题_**
 
-1.  如果我们发起网络请求的对象是借由 Fetch 对象发起的，那么此时此刻这个插件是不能监听到我们发起的网络请求，也就是 Element 插件暂时还没对 Fetch 对象发起的网络请求进行适配
+1.  如果我们发起网络请求的对象是借由 Fetch 对象发起的，那么此时此刻这个插件是不能监听到我们发起的网络请求，也就是 Network 插件暂时还没对 Fetch 对象发起的网络请求进行适配
 2.  在使用过程中我们发现了，这个工具不能够抓取到我们发起的 XMLHttpRequest 网络请求的 request headers 这个对象，我们思考下其实这个工具能够劫持 open 跟 send 函数来获取我们发送过去的 query、json 等数据，因此可以稍微改造一下 mockAjax 的实现，即
 
     ```javascript
